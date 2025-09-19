@@ -64,9 +64,9 @@ with col2:
     st.markdown(
         """
         **General Guidelines**  
-        • Monitor fields from knee-high stage to tasseling; NCLB spreads fast in humid 20–27 °C conditions.  
-        • Make spray decisions based on **disease severity** and crop stage.  
-        • Ensure **500 L water/ha** spray coverage with a knapsack or motorized sprayer.
+        * Monitor fields from knee-high stage to tasseling; NCLB spreads fast in humid 20–27 °C conditions.  
+        * Make spray decisions based on **disease severity** and crop stage.  
+        * Ensure **500 L water/ha** spray coverage with a knapsack or motorized sprayer.
         """
     )
 
@@ -88,12 +88,11 @@ with col2:
     st.markdown(
         """
         **Advisory Highlights**  
-        • **First Spray:** At first symptoms or knee-high stage.  
-        • **Second Spray:** Pre-tasseling (45–55 DAS), depending on severity.  
-        • **Third Spray:** Tasseling to grain-filling stage (60–80 DAS) under humid conditions.  
-        • **Resistance Management:** Rotate fungicides with different FRAC codes to avoid resistance.  
-        • Azoxystrobin + Difenoconazole is most effective;  
-          Azoxystrobin + Cyproconazole and Pyraclostrobin + Epoxiconazole are strong alternatives.
+        * **First Spray:** At first symptoms or knee-high stage.  
+        * **Second Spray:** Pre-tasseling (45–55 DAS), depending on severity.  
+        * **Third Spray:** Tasseling to grain-filling stage (60–80 DAS) under humid conditions.  
+        * **Resistance Management:** Rotate fungicides with different FRAC codes to avoid resistance.  
+        * **Most Effective:** **Azoxystrobin + Difenoconazole**; good alternatives include **Azoxystrobin + Cyproconazole** and **Pyraclostrobin + Epoxiconazole**
         """
     )
 
@@ -118,3 +117,4 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
