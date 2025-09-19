@@ -33,7 +33,7 @@ col1, col2 = st.columns([1, 1])
 
 # --- Left Column : Upload & Prediction ---
 with col1:
-    st.subheader("📸 Upload an Image")
+    st.subheader("Upload an Image")
     uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
 
     if uploaded_file is not None:
@@ -67,23 +67,16 @@ with col2:
         * Monitor fields from knee-high stage to tasseling; NCLB spreads fast in humid 20–27 °C conditions.  
         * Make spray decisions based on **disease severity** and crop stage.  
         * Ensure **500 L water/ha** spray coverage with a knapsack or motorized sprayer.
+       
+        **Severity-Based Spraying**
+
+        | Disease Severity (PDI) | Crop Stage | Spray Recommendation |
+        |------------------------|-----------|----------------------|
+        | **Low (≤10%)**         | Knee-high (30–35 DAS) | Preventive spray with **Carbendazim + Mancozeb** or **Mancozeb** (if no prior infection). |
+        | **Moderate (10–20%)**  | Pre-tasseling (45–55 DAS) | **Azoxystrobin + Cyproconazole** or **Pyraclostrobin + Epoxiconazole** |
+        | **High (>20%)**        | Tasseling–grain filling (60–80 DAS) | **Azoxystrobin + Difenoconazole** (best). Repeat after 15–20 days if humid/warm. |
         """
     )
-
-    st.markdown("#### Severity-Based Spraying")
-    st.table({
-        "Disease Severity (PDI)": ["Low (≤10%)", "Moderate (10–20%)", "High (>20%)"],
-        "Crop Stage": [
-            "Knee-high (30–35 DAS)",
-            "Pre-tasseling (45–55 DAS)",
-            "Tasseling–grain filling (60–80 DAS)"
-        ],
-        "Spray Recommendation": [
-            "Preventive: Carbendazim + Mancozeb OR Zineb",
-            "Azoxystrobin + Cyproconazole OR Pyraclostrobin + Epoxiconazole",
-            "Azoxystrobin + Difenoconazole (repeat after 15–20 days if needed)"
-        ]
-    })
 
     st.markdown(
         """
@@ -117,4 +110,5 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
 
